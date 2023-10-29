@@ -71,5 +71,16 @@ def job():
     # git_add_commit_push(strdate, filename)
 
 
+def jobnew(jobName):
+    # jobName = 'javascript-trending'
+    strdate = datetime.datetime.now().strftime('%Y-%m-%d')
+    filename = '{jobName}-{date}.md'.format(date=strdate, jobName=jobName)
+
+    # create markdown file
+    createMarkdown(strdate, filename)
+    scrape('Javascript', filename)
+
+
 if __name__ == '__main__':
     job()
+    jobnew('javascript-trending')
