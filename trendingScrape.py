@@ -83,4 +83,4 @@ def jobnew(jobName):
 
 if __name__ == '__main__':
     job()
-    jobnew('javascript-trending')
+    # jobnew('javascript-trending')
