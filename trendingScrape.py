@@ -66,9 +66,6 @@ def job():
     scrape('Typescript', filename)
     scrape('Javascript', filename)
     scrape('Python', filename)
-    scrape('AI', filename)
-    scrape('Crypto', filename)
-
 
     # git add commit push
     # git_add_commit_push(strdate, filename)
