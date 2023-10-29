@@ -61,10 +61,14 @@ def job():
     # create markdown file
     createMarkdown(strdate, filename)
     
-    scrape('shopify', filename)
-    scrape('liquid', filename)
-    scrape('typescript', filename)
+    scrape('Shopify', filename)
+    scrape('Liquid', filename)
+    scrape('Typescript', filename)
     scrape('Javascript', filename)
+    scrape('Python', filename)
+    scrape('AI', filename)
+    scrape('Crypto', filename)
+
 
     # git add commit push
     # git_add_commit_push(strdate, filename)
