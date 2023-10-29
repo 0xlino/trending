@@ -4,10 +4,14 @@
 name: Trending Scrape
 
 on:
-  push:
-    branches:
-      - main
-      - 'releases/**'
+  schedule:
+    - cron: "0 2 * * *"
+
+# on:
+#   push:
+#     branches:
+#       - main
+#       - 'releases/**'
 
 jobs:
   build:
